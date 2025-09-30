@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanceMeal Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #f5f5f7;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .contact-box {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-box strong {
+            color: #1d1d1f;
+        }
+        
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .alert strong {
+            color: #856404;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BalanceMeal Support</h1>
+            <p class="subtitle">AI-Powered Nutrition & Meal Tracker</p>
+        </header>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:support@pavelgnatyuk.com">support@pavelgnatyuk.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+            </div>
+            <p>When contacting support, please include:</p>
+            <ul>
+                <li>Your device model and iOS version</li>
+                <li>A description of the issue</li>
+                <li>Steps to reproduce the problem</li>
+                <li>Screenshots if relevant</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>Why do I need an OpenAI API key?</h3>
+            <p>BalanceMeal uses OpenAI's advanced AI models to analyze meals, calculate calories, and generate personalized diet plans. By using your own API key, you have:</p>
+            <ul>
+                <li>Complete control over your data</li>
+                <li>Transparent pricing with no hidden fees</li>
+                <li>Direct access to OpenAI's latest models</li>
+                <li>No subscription costs to us</li>
+            </ul>
+
+            <h3>How do I get an OpenAI API key?</h3>
+            <ol>
+                <li>Go to <a href="https://platform.openai.com/" target="_blank">platform.openai.com</a></li>
+                <li>Create an account or sign in</li>
+                <li>Navigate to API Keys section</li>
+                <li>Click "Create new secret key"</li>
+                <li>Copy the key and paste it into BalanceMeal's OpenAI Settings</li>
+            </ol>
+
+            <h3>How much does OpenAI API usage cost?</h3>
+            <p>Costs depend on which model you choose and how often you use AI features:</p>
+            <ul>
+                <li><strong>GPT-3.5 Turbo:</strong> ~$0.01-0.02 per meal analysis</li>
+                <li><strong>GPT-4o Mini:</strong> ~$0.02-0.03 per meal analysis</li>
+                <li><strong>GPT-4o:</strong> ~$0.05-0.10 per meal analysis</li>
+            </ul>
+            <p>Typical monthly usage: $5-15 for regular tracking</p>
+
+            <h3>Can the app work without an API key?</h3>
+            <p>Yes, but with limited functionality. Without an API key:</p>
+            <ul>
+                <li>You can manually enter calorie values</li>
+                <li>Track meals, activities, and weight</li>
+                <li>View weekly statistics</li>
+            </ul>
+            <p>You cannot:</p>
+            <ul>
+                <li>Analyze meals from photos or text</li>
+                <li>Generate personalized diet plans</li>
+                <li>Create daily menus</li>
+            </ul>
+
+            <h3>Why aren't my meal photos being analyzed?</h3>
+            <p>Photo analysis requires a vision-capable model. Make sure you're using:</p>
+            <ul>
+                <li>GPT-4 Turbo</li>
+                <li>GPT-4o</li>
+                <li>GPT-4o Mini</li>
+            </ul>
+            <p>GPT-3.5 Turbo and standard GPT-4 do not support image analysis.</p>
+
+            <h3>Is my data private?</h3>
+            <p>Yes, absolutely. All your data is stored locally on your device. The only data sent externally is to OpenAI for meal analysis and plan generation, using your own API key. We never see or store your personal information, meals, or health data.</p>
+
+            <h3>Do I need to complete the questionnaire?</h3>
+            <p>The questionnaire is optional but highly recommended. Without it, the app works as a basic tracker. With it, you get:</p>
+            <ul>
+                <li>Personalized calorie targets based on your goals</li>
+                <li>Custom macro distribution</li>
+                <li>Diet plans that respect your preferences and restrictions</li>
+                <li>Context-aware daily menus</li>
+            </ul>
+
+            <h3>How do diet plans work?</h3>
+            <p>BalanceMeal uses a two-tier system:</p>
+            <ul>
+                <li><strong>Diet Plan:</strong> A 30-day nutritional framework with your calorie targets and macro distribution</li>
+                <li><strong>Daily Menu:</strong> Specific meal suggestions generated daily based on your diet plan and meal history</li>
+            </ul>
+            <p>This ensures consistent nutrition while providing variety.</p>
+
+            <h3>Can I edit past entries?</h3>
+            <p>Yes! Go to the History tab, tap on any day, and you can edit or delete meals, activities, and weight entries. You can also add new entries to past days.</p>
+
+            <h3>Why are calorie counts different when I recalculate?</h3>
+            <p>AI models provide estimates based on the information available. Variations can occur due to:</p>
+            <ul>
+                <li>Photo quality and angle</li>
+                <li>Description detail level</li>
+                <li>Model interpretation</li>
+                <li>Portion size estimation</li>
+            </ul>
+            <p>For best results, provide both a clear photo and detailed description.</p>
+        </div>
+
+        <div class="section">
+            <h2>Common Issues</h2>
+
+            <h3>"Invalid API Key" Error</h3>
+            <p>Solutions:</p>
+            <ul>
+                <li>Make sure you copied the entire key with no extra spaces</li>
+                <li>Check that your OpenAI account has billing enabled</li>
+                <li>Verify the key hasn't expired or been revoked</li>
+                <li>Try generating a new key from OpenAI platform</li>
+            </ul>
+
+            <h3>App Crashes When Taking Photos</h3>
+            <p>Ensure you've granted camera permissions:</p>
+            <ol>
+                <li>Go to Settings > Privacy & Security > Camera</li>
+                <li>Find BalanceMeal and enable it</li>
+                <li>Restart the app</li>
+            </ol>
+
+            <h3>Daily Menu Not Generating</h3>
+            <p>Check that:</p>
+            <ul>
+                <li>You have a valid API key entered</li>
+                <li>You've completed the questionnaire</li>
+                <li>You have an active internet connection</li>
+                <li>Your OpenAI account has available credits</li>
+            </ul>
+
+            <h3>Photos Not Saving</h3>
+            <p>Grant photo library access:</p>
+            <ol>
+                <li>Go to Settings > Privacy & Security > Photos</li>
+                <li>Find BalanceMeal and set to "Add Photos Only" or "Full Access"</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>System Requirements</h2>
+            <ul>
+                <li><strong>iOS Version:</strong> 26.0 or later</li>
+                <li><strong>Internet:</strong> Required for AI features</li>
+                <li><strong>Storage:</strong> Varies based on number of photos stored</li>
+                <li><strong>OpenAI Account:</strong> Required for full functionality</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="https://platform.openai.com/docs" target="_blank">OpenAI API Documentation</a></li>
+                <li><a href="https://platform.openai.com/account/billing" target="_blank">Manage OpenAI Billing</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Pavel Gnatyuk. All rights reserved.</p>
+            <p>BalanceMeal is not a medical application. Consult healthcare professionals for medical advice.</p>
+        </footer>
+    </div>
+</body>
+</html>
