@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanceMeal - AI-Powered Nutrition Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background: white;
+            padding: 60px 40px;
+            margin: 40px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #1d1d1f;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            font-size: 1.5em;
+            color: #1d1d1f;
+            margin-bottom: 15px;
+        }
+        
+        .feature p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .how-it-works {
+            background: #f5f5f7;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            line-height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .step h3 {
+            font-size: 1.3em;
+            color: #1d1d1f;
+            margin-bottom: 15px;
+        }
+        
+        .step p {
+            color: #666;
+        }
+        
+        .privacy-note {
+            background: #e8f4f8;
+            border-left: 4px solid #007AFF;
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+        
+        .privacy-note h3 {
+            color: #0055a4;
+            margin-bottom: 10px;
+        }
+        
+        .privacy-note p {
+            color: #333;
+        }
+        
+        footer {
+            background: #1d1d1f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            h2 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>BalanceMeal</h1>
+        <p>AI-Powered Nutrition & Meal Tracker</p>
+        <p class="hero-subtitle">Track meals with photos. Get personalized diet plans. Monitor your progress.</p>
+        <a href="#features" class="cta-button">Learn More</a>
+    </div>
+
+    <div class="container">
+        <div class="section" id="features">
+            <h2>Intelligent Meal Tracking Made Simple</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Photo Analysis</h3>
+                    <p>Snap a picture of your meal and get instant calorie estimates with complete macro breakdown. AI identifies dishes and calculates nutrition automatically.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Plans</h3>
+                    <p>Get a 30-day diet plan tailored to your goals, preferences, and dietary restrictions. Receive daily menu suggestions with variety and balance.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Weekly Insights</h3>
+                    <p>Track your adherence, monitor macro distribution, and see activity patterns. Week-over-week comparisons help you stay on target.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Activity Tracking</h3>
+                    <p>Log workouts with automatic calorie burn calculation. Track 9+ activity types from walking to swimming with MET-based formulas.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Weight Monitoring</h3>
+                    <p>Track weight changes with optional progress photos. See trends and monitor how your efforts are paying off.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>All data stored locally on your device. You control your own OpenAI API key. No subscriptions, no data collection.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Get Your API Key</h3>
+                    <p>Sign up at OpenAI and get your API key. This gives you direct access to AI analysis with transparent pricing.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Complete Questionnaire</h3>
+                    <p>Tell us about your goals, preferences, and dietary restrictions. This helps create your personalized nutrition plan.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Your Diet Plan</h3>
+                    <p>Receive a 30-day nutritional framework with daily calorie targets and macro distribution tailored to your goals.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Track Daily</h3>
+                    <p>Log meals with photos or text, track activities, and monitor weight. Get daily menu suggestions and weekly insights.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Two-Tier Nutrition System</h2>
+            <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 40px;">Professional meal planning that mirrors how real nutritionists work</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>Diet Plan (Strategic)</h3>
+                    <p>Your 30-day nutritional framework defining daily calorie targets and macro distribution. Ensures consistency and metabolic stability.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>Daily Menu (Tactical)</h3>
+                    <p>Specific meal suggestions generated daily based on your diet plan and meal history. Provides variety while maintaining nutritional goals.</p>
+                </div>
+            </div>
+            
+            <div class="privacy-note">
+                <h3>Why This Approach?</h3>
+                <p><strong>Consistency:</strong> All daily menus meet your long-term health goals<br>
+                <strong>Cost Efficient:</strong> Diet plan generated once, used for 30 days<br>
+                <strong>Professional:</strong> Mirrors nutritionist methodology<br>
+                <strong>Adaptive:</strong> Plans regenerate every 30 days as you progress</p>
+            </div>
+        </div>
+
+        <div class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h2 style="color: white;">Your Data, Your Control</h2>
+            <p style="text-align: center; font-size: 1.2em; margin: 20px 0;">BalanceMeal puts privacy first. All your data stays on your device.</p>
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="margin: 15px 0;">✓ No account required</p>
+                <p style="margin: 15px 0;">✓ No data collection or tracking</p>
+                <p style="margin: 15px 0;">✓ You control your OpenAI API key</p>
+                <p style="margin: 15px 0;">✓ Local storage only</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>System Requirements</h2>
+            <div style="text-align: center;">
+                <p style="font-size: 1.1em; color: #666; margin: 20px 0;">
+                    <strong>iOS 26.0 or later</strong><br>
+                    Built exclusively for iOS 26 with native Liquid Glass design
+                </p>
+                <p style="font-size: 1.1em; color: #666; margin: 20px 0;">
+                    <strong>OpenAI API Key</strong><br>
+                    Required for AI features (you provide your own)
+                </p>
+                <p style="font-size: 1.1em; color: #666; margin: 20px 0;">
+                    <strong>Internet Connection</strong><br>
+                    For AI analysis and diet plan generation
+                </p>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center; background: #f5f5f7;">
+            <h2>Coming Soon to the App Store</h2>
+            <p style="font-size: 1.2em; color: #666; margin: 30px 0;">Balance your nutrition with the power of AI</p>
+            <p style="color: #999;">Check back soon for download link</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 Pavel Gnatyuk. All rights reserved.</p>
+        <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">
+            BalanceMeal is not a medical application.<br>
+            Consult healthcare professionals for medical advice.
+        </p>
+    </footer>
+</body>
+</html>
